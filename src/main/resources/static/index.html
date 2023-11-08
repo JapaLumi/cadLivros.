@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro e Pesquisa de Livros</title>
+    <body bgcolor="f7d2ea">
+    <link rel="stylesheet" href="styles.css">
+    <script type="text/javascript" src="main.js"></script>
+</head>
+</head>
+<body> 
+    <div class="img">
+     <h1>Cadastro e Pesquisa de Livros</h1>
+    <div id = "cadastro">
+        <div class="cj">
+        <h2>Cadastro de Livros</h2>
+        <form id="cadastroForm">
+            <label for="name">Descrição:</label>
+            <input type="text" id="descricao" name="descricao"required><br>
+
+            <label for="plataform">Isbn:</label>
+            <input type="text" id="isbn" name="isbn" required><br>
+            
+       
+            <button type="submit" onclick="cadastrarLivro(event)">✔Cadastrar</button>
+            <button type="button" onclick="atualizarLivro()">🔁Atualizar</button>
+            <button type="button" onclick="excluirLivro()">❌Excluir</button>
+            
+        </form>
+    </div>
+    </div>
+   
+    <div id="pesquisa">
+        <div class="pj">
+        <h2>Pesquisa de Livros</h2>
+        <form id="pesquisaForm">
+            <label for="searchId">ID do jogo:</label>
+            <input type="text" id="searchId" name="searchId" required><br>
+
+            <button type="button" onclick="pesquisarLivro()">Pesquisar</button>
+        </form>
+        <div id="resultadoPesquisa"></div>
+    </div>
+    </div>
+</body>
+</html>
